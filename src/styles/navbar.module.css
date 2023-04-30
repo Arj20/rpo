@@ -1,0 +1,20 @@
+.header {
+    background: #333333;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 7rem;
+}
+
+.link__box {
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem
+}

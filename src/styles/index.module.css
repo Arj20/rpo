@@ -1,0 +1,37 @@
+.image {
+    width: 100%;
+    background-size: contain !important;
+    height: 240px;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.carousel_card {
+    text-align: center;
+    padding: 1rem;
+    opacity: 0.8;
+}
+
+.heading {
+    font-family: 'Titan One', cursive !important;
+}
+
+.feedbacks {
+    background: #333333;
+    color: white;
+    padding: 1rem;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
