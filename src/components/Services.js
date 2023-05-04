@@ -22,7 +22,7 @@ const services = [{
 {
     id: 's3',
     icon: require("../assets/bench-mark.jpg"),
-    title: "Bench Marketing Services",
+    title: "Bench Marketing",
     desc: "Our management consulting services focus on our clients."
 },
 {

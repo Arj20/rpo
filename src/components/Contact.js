@@ -53,7 +53,6 @@ export const Contact = () => {
                             size="small"
                             name="subject"
                             onChange={handleChange}
-                            fullWidth
                         >
                             <MenuItem value="">
                                 <em>Subject</em>

@@ -10,13 +10,17 @@ import { Contact } from './components/Contact';
 import { Feedback } from './components/Feedback';
 import { Questions } from './components/QnA';
 import { Footer } from './components/Footer';
+import { Suspense } from 'react';
+
+import './index.css';
+import { Loader } from './components/Loader';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div>
-        <Navbar />
+      <Suspense fallback={() => <Loader message="We will be joining you soon..." />}>
+        < Navbar />
         <ImageWrapper />
         <CardWrapper />
         <AboutUs />
@@ -25,8 +29,8 @@ function App() {
         <Feedback />
         <Questions />
         <Footer />
-      </div>
-    </ThemeProvider>
+      </Suspense >
+    </ThemeProvider >
   );
 }
 

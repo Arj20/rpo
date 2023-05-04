@@ -25,7 +25,7 @@ export const Questions = () => {
 
     return <Grid container spacing={3}>
         <Grid item container xs={4} bgcolor="#333333" alignItems="center">
-            <Card elevation={10} sx={{ maxWidth: "90%", margin: 'auto', height: '75%', bgcolor: "#1976d2" }} >
+            <Card elevation={10} sx={{ maxWidth: "90%", margin: 'auto', height: '75%' }} >
                 <img src={QuesImage} alt="questions" />
             </Card>
         </Grid>

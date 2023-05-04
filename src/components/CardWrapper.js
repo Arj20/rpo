@@ -32,13 +32,13 @@ export const CardWrapper = () => {
     return <Box className={classes.container}>
         {
             cards.map((card, index) => <Card className={`${classes[`card-${index}`]} ${classes.card}`}>
-        <CardContent key={card.imageUrl} className={classes['card-content']}>
-            <Typography variant="h4">{card.title}</Typography>
-            <Typography variant="h6">{card.desc}</Typography>
-            <Button size="large" color="inherit" variant="text" href="#" endIcon={<ArrowRightAltIcon />} >Read More </Button>
-        </CardContent>
-    </Card >)
-}
+                <CardContent key={card.imageUrl} className={classes['card-content']}>
+                    <Typography variant="h5" sx={{ fontWeight: 'bold' }} >{card.title}</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: '700w' }}  >{card.desc}</Typography>
+                    <Button size="large" color="inherit" variant="text" href="#" endIcon={<ArrowRightAltIcon />} >Read More </Button>
+                </CardContent>
+            </Card >)
+        }
     </Box >
 
 }
