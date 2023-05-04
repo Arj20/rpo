@@ -8,6 +8,8 @@ import { AboutUs } from './components/AboutUs';
 import { Services } from './components/Services';
 import { Contact } from './components/Contact';
 import { Feedback } from './components/Feedback';
+import { Questions } from './components/QnA';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Services />
         <Contact />
         <Feedback />
+        <Questions />
+        <Footer />
       </div>
     </ThemeProvider>
   );

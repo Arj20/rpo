@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material"
+import { Box, Button, Card, CardContent, CardMedia, Typography } from "@mui/material"
 import ServicesImage from '../assets/services-bg.jpg'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Slider from "react-slick";

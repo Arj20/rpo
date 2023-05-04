@@ -45,8 +45,8 @@ function Navbar() {
             <Box className={classes.header}>
                 <Typography variant="h6" >Welcome to Rahul RPO</Typography>
                 <Box className={classes.link__box} >
-                    <Link underline='none' color="inherit" href='sales@alpharecruiters.co' className={classes.link} > <EmailIcon />sales@alpharecruiters.co</Link>
-                    <Link underline='none' color="inherit" href='sales@alpharecruiters.co' className={classes.link}><PhoneIcon /> 1233333333</Link>
+                    <Link underline='none' color="inherit" href='mailto:sales@alpharecruiters.co' className={classes.link} > <EmailIcon />sales@alpharecruiters.co</Link>
+                    <Link underline='none' color="inherit" href='tel:sales@alpharecruiters.co' className={classes.link}><PhoneIcon /> 1233333333</Link>
                 </Box>
             </Box>
             <Container maxWidth="xl">
@@ -100,7 +100,7 @@ function Navbar() {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Typography textAlign="center" variant="h6" fontWeight="bold">{page}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -129,7 +129,7 @@ function Navbar() {
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                sx={{ my: 2, color: 'white', display: 'block', fontWeight: 700, fontSize: '1rem' }}
                             >
                                 {page}
                             </Button>
@@ -167,7 +167,7 @@ function Navbar() {
                     </Box>
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBar >
     );
 }
 export default Navbar;
