@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, Grid, InputAdornment, MenuItem, Select, TextField, Typography } from "@mui/material"
+import { Box, Button, Grid, InputAdornment, MenuItem, Select, TextField, Typography } from "@mui/material"
 import classes from '../styles/contact.module.css'
 import ContactUsImg from '../assets/contactus.jpeg'
 import { formInputs } from "../utils/util"
@@ -44,25 +44,23 @@ export const Contact = () => {
                     )
                 }
                 <Grid item xs={6}>
-                    <FormControl sx={{ minWidth: 120 }}>
-                        <Select
-                            labelId="demo-simple-select-helper-label"
-                            id="demo-simple-select-helper"
-                            sx={{ width: 395 }}
-                            value={subject}
-                            size="small"
-                            name="subject"
-                            onChange={handleChange}
-                        >
-                            <MenuItem value="">
-                                <em>Subject</em>
-                            </MenuItem>
-                            <MenuItem value="English">English</MenuItem>
-                            <MenuItem value="Burmese">Burmese</MenuItem>
-                            <MenuItem value="Chinese(Simplifed)">Chinese(Simplifed)</MenuItem>
-                            <MenuItem value="Corsican">Corsican</MenuItem>
-                        </Select>
-                    </FormControl>
+                    <Select
+                        labelId="demo-simple-select-helper-label"
+                        id="demo-simple-select-helper"
+                        value={subject}
+                        size="small"
+                        name="subject"
+                        onChange={handleChange}
+                        fullWidth
+                    >
+                        <MenuItem value="">
+                            <em>Subject</em>
+                        </MenuItem>
+                        <MenuItem value="English">English</MenuItem>
+                        <MenuItem value="Burmese">Burmese</MenuItem>
+                        <MenuItem value="Chinese(Simplifed)">Chinese(Simplifed)</MenuItem>
+                        <MenuItem value="Corsican">Corsican</MenuItem>
+                    </Select>
                 </Grid>
                 <Grid item xs={12}>
                     <TextField multiline variant="outlined" name="question" label="Question" rows={10} minRows={10} size="small" fullWidth />

@@ -1,11 +1,13 @@
-import { Box, Link, Card, CardContent, CardMedia, Typography } from "@mui/material"
+import { Box, Link, Card, CardContent, Typography } from "@mui/material"
 import CustomerEngagement from '../assets/customer-eng.avif'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import classes from '../styles/card.module.css'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const AboutUs = () => {
     return <Card className={classes.about} elevation={6} >
-        <CardMedia title="image" image={CustomerEngagement} />
+        <LazyLoadImage alt="image" src={CustomerEngagement} effect="blur" />
+        {/* <CardMedia title="image" image={CustomerEngagement} /> */}
         <CardContent className={classes.about__desc} >
             <Box>
                 <Typography variant="h2" className={classes.heading} >About Us</Typography>
