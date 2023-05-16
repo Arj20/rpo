@@ -42,7 +42,7 @@ export const Footer = () => {
             </Grid>
         </Grid>
         <Grid container item sx={{ bgcolor: 'rgba(79, 82, 80,0.5)' }} px={8} py={2} alignItems="flex-start" justifyContent="center" >
-            <Grid item xs={3} sx={{ display: 'flex', flexDirection: 'column', gap: '2rem' }} >
+            <Grid item lg={3} md={3} xs={12} sm={12} sx={{ display: 'flex', flexDirection: 'column', gap: '2rem' }} >
                 <Typography variant="h6" fontWeight="bold">About Rahul RPO.</Typography>
                 <Box>
                     <Typography>Rahul RPO is the most believed seaward enrollment firm arranged in USA, as well as in India.</Typography>
@@ -63,10 +63,10 @@ export const Footer = () => {
                     </Typography>
                 </Box>
             </Grid>
-    <Grid item container xs={2} justifyContent="flex-end">
+            <Grid item container lg={2} md={2} xs={12} sm={12} justifyContent="flex-end">
                 <ListItems links={mainLinks} />
             </Grid>
-            <Grid item container xs={6} justifyContent="flex-end">
+            <Grid item container lg={6} md={6} xs={12} sm={12} justifyContent="flex-end">
                 <ListItems links={allServices} />
             </Grid>
         </Grid>

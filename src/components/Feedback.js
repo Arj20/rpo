@@ -11,9 +11,9 @@ export const Feedback = () => {
             <Typography variant="h6" textAlign="center">Testimonials</Typography>
             <Typography variant="h2" textAlign="center" className={classes.heading}>User Feedbacks</Typography>
         </Grid>
-        <Grid item container spacing={2} m={1} >
+        <Grid item container spacing={2} m={1}>
 
-            {[1, 2].map((item) => <Grid item xs={6} key={item}>
+            {[1, 2].map((item) => <Grid item xs={12} sm={12} md={6} key={item}>
                 <Card className={classes.feedback}>
                     <Rating
                         name="text-feedback"

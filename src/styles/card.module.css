@@ -63,9 +63,41 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-
 }
 
 .heading {
     font-family: 'Titan One', cursive !important;
+    text-align: center;
+}
+
+@media only screen and (max-width: 840px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid {
+        gap: 0rem;
+    }
+
+    .feedbacks {
+        flex-direction: column;
+    }
+
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .about {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+
+    .query {
+        flex-direction: column;
+    }
 }

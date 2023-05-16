@@ -24,12 +24,12 @@ const faqs = [{
 export const Questions = () => {
 
     return <Grid container spacing={3}>
-        <Grid item container xs={4} bgcolor="#333333" alignItems="center">
+        <Grid item container xs={12} sm={12} md={12} lg={4} bgcolor="#333333" alignItems="center"  >
             <Card elevation={10} sx={{ maxWidth: "90%", margin: 'auto', padding: 0, background: 'inherit' }} >
                 <img src={QuesImage} alt="questions" />
             </Card>
         </Grid>
-        <Grid item container xs={8} bgcolor="#f4f4f4" alignItems="center" direction="column" >
+        <Grid item container xs={12} sm={12} md={12} lg={8} bgcolor="#f4f4f4" alignItems="center" direction="column" >
             <Typography variant="h6" mt={6} >FAQ ----</Typography>
             <Typography variant="h3" className={classes.heading} my={2} >Some Quesitons And Answers</Typography>
             <Container sx={{ width: '80%', marginBottom: '1rem' }}>

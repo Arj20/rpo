@@ -20,7 +20,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Suspense fallback={() => <Loader message="We will be joining you soon..." />}>
-        < Navbar />
+        <Navbar />
         <ImageWrapper />
         <CardWrapper />
         <AboutUs />
